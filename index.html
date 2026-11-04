@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dede Ahmad Fauzan | Portfolio</title>
+  <meta name="description" content="Portfolio Dede Ahmad Fauzan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#beranda" class="logo">Dede.</a>
+
+    <nav id="menu" class="menu" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Ganti tema">
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+      <button id="menu-toggle" class="icon-btn hamburger" type="button" aria-label="Buka menu" aria-controls="menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="hero-text">
+        <p class="hero-hello">Halo, saya</p>
+        <h1>Dede Ahmad Fauzan</h1>
+        <p class="hero-role"><span id="typing"></span><span class="cursor" aria-hidden="true">|</span></p>
+        <p class="hero-desc">
+          Saya senang membuat website sederhana yang rapi dan mudah dipakai.
+          Semua kode proyek ini tersimpan di GitHub.
+        </p>
+        <div class="hero-buttons">
+          <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#kontak" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="avatar" aria-hidden="true">DF</div>
+    </section>
+
+    <section id="tentang" class="section">
+      <h2>Tentang Saya</h2>
+      <div class="about-grid">
+        <article class="reveal">
+          <h3>Latar belakang</h3>
+          <p>Saya Dede Ahmad Fauzan. Ganti teks ini dengan kampus, jurusan, atau pekerjaanmu.</p>
+        </article>
+        <article class="reveal">
+          <h3>Sedang dipelajari</h3>
+          <p>HTML, CSS, JavaScript, serta Git dan GitHub untuk mengelola versi kode.</p>
+        </article>
+        <article class="reveal">
+          <h3>Tujuan</h3>
+          <p>Membangun proyek nyata yang bisa ditunjukkan lewat portfolio ini.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skill" class="section">
+      <h2>Skill</h2>
+      <div class="skills">
+        <div class="skill reveal">
+          <div class="skill-head"><span>HTML</span><span>85%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="85"></div></div>
+        </div>
+        <div class="skill reveal">
+          <div class="skill-head"><span>CSS</span><span>75%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="75"></div></div>
+        </div>
+        <div class="skill reveal">
+          <div class="skill-head"><span>JavaScript</span><span>60%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="60"></div></div>
+        </div>
+        <div class="skill reveal">
+          <div class="skill-head"><span>Git dan GitHub</span><span>70%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="70"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="section">
+      <h2>Proyek</h2>
+      <div class="project-grid">
+        <article class="project reveal">
+          <h3>Website Portfolio</h3>
+          <p>Situs statis responsif dengan mode gelap, dipublikasikan lewat GitHub Pages.</p>
+          <a href="https://github.com/USERNAME/portfolio-dede" target="_blank" rel="noopener">Lihat repositori</a>
+        </article>
+        <article class="project reveal">
+          <h3>Proyek Kedua</h3>
+          <p>Ganti kartu ini dengan proyek milikmu.</p>
+          <a href="#kontak">Ajak kolaborasi</a>
+        </article>
+        <article class="project reveal">
+          <h3>Proyek Ketiga</h3>
+          <p>Ganti kartu ini dengan proyek milikmu.</p>
+          <a href="#kontak">Ajak kolaborasi</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="kontak" class="section">
+      <h2>Kontak</h2>
+      <form id="contact-form" class="form reveal">
+        <label for="nama">Nama</label>
+        <input id="nama" name="nama" type="text" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Kirim</button>
+        <p class="form-note">Tombol ini membuka aplikasi email kamu dengan pesan yang sudah terisi.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Dede Ahmad Fauzan | <a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
